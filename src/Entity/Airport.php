@@ -10,13 +10,13 @@ class Airport
 
    private int $Emplacement;
 
-   private string $escale;
+   private string $name;
 
-   public function __construct(int $Emplacement, string $escale)
+   public function __construct(int $Emplacement, string $name)
    {
 
     $this->Emplacement = $Emplacement;
-    $this->escale = $escale;
+    $this->name = $name;
 
    }
 
@@ -46,25 +46,25 @@ class Airport
    }
 
    /**
-    * Get the value of escale
+    * Get the value of name
     *
     * @return string
     */
-   public function getEscale(): string
+   public function getname(): string
    {
-      return $this->escale;
+      return $this->name;
    }
 
    /**
-    * Set the value of escale
+    * Set the value of name
     *
-    * @param string $escale
+    * @param string $name
     *
     * @return self
     */
-   public function setEscale(string $escale): self
+   public function setname(string $name): self
    {
-      $this->escale = $escale;
+      $this->name = $name;
 
       return $this;
    }
